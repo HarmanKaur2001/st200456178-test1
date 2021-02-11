@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Locale;
@@ -101,4 +102,61 @@ public class Pet {
             return "Invalid";
         }
     }
+
+    public String movesBy(){
+        if(this.name == "dog")
+        {
+            return "walks or runs";
+        }
+        else if (this.name == "cat")
+        {
+            return "walks or run";
+        }
+        else if (this.name == "bird")
+        {
+            return "flies";
+        }
+        else if(this.name == "reptile")
+        {
+            return "slither or walk";
+        }
+        else if(this.name == "fish")
+        {
+            return "swim";
+        }
+        else {
+            return "Invalid";
+        }
+    }
+
+    public boolean hasFur() {
+        if(this.name == "dog")
+        {
+            return true;
+        }
+        else if (this.name == "cat")
+        {
+            return true;
+        }
+        else if (this.name == "bird")
+        {
+            return false;
+        }
+        else if(this.name == "reptile")
+        {
+            return false;
+        }
+        else if(this.name == "fish")
+        {
+            return false;
+        }
+        else {
+            return false;
+        }
+    }
+
+    public String toString() {
+        return  name + " is a " + age + " year old " + colour +" " + type  + ".";
+    }
+
 }
